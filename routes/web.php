@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\JabatanController;
+use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\MahasiswaController;
 
 /*
@@ -28,6 +28,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware('auth')->group(function () {
-    // manajemen jabatan
-    Route::get('/jabatan', [JabatanController::class, 'index']);
+    // manajemen jurusan
+    Route::get('/jurusan', [JabatanController::class, 'index']);
+    Route::get('/jurusan/form', [JabatanController::class, 'create']);
 });

@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Jabatan;
 
-class JabatanController extends Controller
+class JurusanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +13,7 @@ class JabatanController extends Controller
      */
     public function index()
     {
-        return view('jabatan.index');
+        //
     }
 
     /**
