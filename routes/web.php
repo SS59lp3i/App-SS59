@@ -29,6 +29,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::middleware('auth')->group(function () {
     // manajemen jurusan
-    Route::get('/jurusan', [JabatanController::class, 'index']);
-    Route::get('/jurusan/form', [JabatanController::class, 'create']);
+    Route::get('/jurusan', [JurusanController::class, 'index']);
+    Route::get('/jurusan/form', [JurusanController::class, 'create']);
 });

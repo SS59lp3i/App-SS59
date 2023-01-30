@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Jurusan;
 
 class JurusanController extends Controller
 {
@@ -13,7 +14,9 @@ class JurusanController extends Controller
      */
     public function index()
     {
-        //
+        $nomor = 1;
+        $jurusan = Jurusan::all();
+        return view('jurusan.index',compact('nomor','jurusan'));
     }
 
     /**
@@ -23,7 +26,7 @@ class JurusanController extends Controller
      */
     public function create()
     {
-        //
+        return view('jurusan.form');
     }
 
     /**

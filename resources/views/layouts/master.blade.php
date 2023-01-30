@@ -235,7 +235,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/jabatan" class="nav-link">
+            <a href="/jurusan" class="nav-link">
               <i class="nav-icon fas fa-user-tie"></i>
               <p>
                 Data Jurusan
