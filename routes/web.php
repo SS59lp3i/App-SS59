@@ -31,4 +31,5 @@ Route::middleware('auth')->group(function () {
     // manajemen jurusan
     Route::get('/jurusan', [JurusanController::class, 'index']);
     Route::get('/jurusan/form', [JurusanController::class, 'create']);
+    Route::post('/jurusan', [JurusanController::class, 'store']);
 });
