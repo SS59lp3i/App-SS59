@@ -32,4 +32,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/jurusan', [JurusanController::class, 'index']);
     Route::get('/jurusan/form', [JurusanController::class, 'create']);
     Route::post('/jurusan', [JurusanController::class, 'store']);
+    Route::get('/jurusan/edit/{id}', [JurusanController::class, 'edit']);
+    Route::put('/jurusan/{id}', [JurusanController::class, 'update']);
 });
