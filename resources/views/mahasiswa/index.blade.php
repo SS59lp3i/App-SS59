@@ -24,7 +24,7 @@
     <!-- Default box -->
     <div class="card">
       <div class="card-header">
-        <a href="/jurusan/form" class="btn btn-primary">Tambah Data</a>
+        <a href="/mahasiswa/form" class="btn btn-primary">Tambah Data</a>
 
         <div class="card-tools">
           <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">

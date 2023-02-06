@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Mahasiswa;
+use App\Models\Jurusan;
 
 class MahasiswaController extends Controller
 {
@@ -26,7 +27,8 @@ class MahasiswaController extends Controller
      */
     public function create()
     {
-        //
+        $jurusan = Jurusan::all();
+        return view('mahasiswa.form',compact('jurusan'));
     }
 
     /**
@@ -37,7 +39,17 @@ class MahasiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $mhs = new Mahasiswa;
+
+        $mhs->nim = $request->nim;
+        $mhs->nama = $request->nama;
+        $mhs->tempat_lahir = $request->tempat;
+        $mhs->tanggal_lahir = $request->tanggal;
+        $mhs->jurusans_id = $request->jurusan;
+        $mhs->foto = "default.jpg";
+        $mhs->save();
+
+        return redirect('/mahasiswa');
     }
 
     /**
