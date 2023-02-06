@@ -53,8 +53,8 @@
                     <th scope="row">{{$nomor++}}</th>
                     <td>{{$item->nim}}</td>
                     <td>{{$item->nama}}</td>
-                    <td>{{$item->tempat_lahir}} / {{$item->tanggal_lahir}}</td>
-                    <td>{{$item->jurusans_id}}</td>
+                    <td>{{$item->tempat_lahir}} / {{date_format(date_create($item->tanggal_lahir),"d M Y")}}</td>
+                    <td>{{$item->jurusans->jurusan}}</td>
                     <td>
                         <a href="/jurusan/edit/{{$item->id}}" class="btn btn-sm btn-info">edit</a>
                         
