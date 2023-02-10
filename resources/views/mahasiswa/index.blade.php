@@ -56,7 +56,7 @@
                     <td>{{$item->tempat_lahir}} / {{date_format(date_create($item->tanggal_lahir),"d M Y")}}</td>
                     <td>{{$item->jurusans->jurusan}}</td>
                     <td>
-                        <a href="/jurusan/edit/{{$item->id}}" class="btn btn-sm btn-info">edit</a>
+                        <a href="/mahasiswa/edit/{{$item->id}}" class="btn btn-sm btn-info">edit</a>
                         
                         <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modal-default{{$item->id}}">
                           hapus
